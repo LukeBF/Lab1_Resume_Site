@@ -1,0 +1,102 @@
+/*CSS reset to remove margin and padding*/
+*
+{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+/*GENERAL*/
+body
+{
+      font-family: 'Poppins', sans-serif;
+}
+a
+{
+      text-decoration: none; 
+}
+p
+{
+      font-size: 1.1rem;
+}
+h1,h2
+{
+      margin-bottom: 15px;
+}
+/*UTILITIES*/
+.grid
+{
+      display: grid;
+}
+.grid-row-2
+{
+      grid-template-rows: 45% 1fr;
+}
+
+/*HEADER*/
+/**navigation**/
+nav
+{
+      background-color: black;
+      color: #fff;
+}
+nav a
+{
+      color: #fff;
+      font-size: 1.2rem;
+      padding: 5px 10px;
+}
+nav li
+{
+      display: inline-block;
+      padding: 16px 32px;
+}
+nav ul
+{
+      /*removes buttet point from a link*/
+      list-style: none;
+}
+/*HERO*/
+#hero-section
+{
+      height: calc(100vh - 54px);
+      background-image: url("../img/hero-2.jpg");
+      background-position: center center;
+      background-repeat: none;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+#hero-section h1
+{
+      font-size: 3rem;
+}
+#hero-section > div
+{
+      width: 50%;
+      padding: 32px;
+      justify-content: center;
+      align-content: end;
+}
+#hero-section > div:nth-child(1) > img
+{
+      width: 250px;
+      border-radius: 50%;
+      align-self: center;
+}
+#hero-section > div:nth-child(2)
+{
+      text-align: center;
+}
+#hero-section > div:nth-child(2) > div
+{
+      margin-top: 32px;
+}
+#hero-section > div:nth-child(2) > div > a
+{
+      border: 2px solid #000;
+      padding: 15px;
+}
+/*CERTIFICATES*/
+#certificates-section div > img
+{
+      width: 75%;
+}
