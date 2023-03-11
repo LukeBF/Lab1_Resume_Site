@@ -14,7 +14,8 @@
       <body>
             <!--<header> is a container-->
             <header>
-                  <nav>
+                  <nav class="grid grid-col-2">
+                        <h2>Lukos</h2>
                         <ul>
                               <li><a href="#">Home</a></li>
                               <li><a href="html/about.html">About</a></li>
@@ -29,7 +30,7 @@
                   </div>
                   <div>
                         <h1>Luke Blache-Fraser</h1>
-                        <h2>IT Support Analyst | Web Developer</h2>
+                        <h2>IT Services | Web Developer</h2>
                         <p>
                               Providing technical support and website development for your business or personal brand.
                         </p>
@@ -42,10 +43,10 @@
 
             <!--About-->
             <section id="about-section">
-                  <div class="grid grid-col-2">
-                        <div>
+                  <div>
+                        <!-- <div>
                               <img src="img/profile-2.jpg">
-                        </div>
+                        </div> -->
                         <div>
                               <h2>My Story</h2>
                               <p>
@@ -53,7 +54,7 @@
                                     I believe in continuous learning and understanding how things work, which has taken me down the path of web development as I aim to build on my skillsets and feed my creative side.<br>
                                     If you like what you see, drop me a line.
                               </p>
-                              <div>
+                              <div class="about-links grid">
                                     <div>
                                           <a href="#">Message Me</a><br>
                                     </div>
@@ -75,7 +76,7 @@
                   <div class="grid grid-col-3 container">
                         <div>
                               <i class="fa-solid fa-computer"></i>
-                              <h3>Hardware & Software</h3>
+                              <h3>Technical Support</h3>
                               <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, vitae.
                               </p>
@@ -93,6 +94,84 @@
                               <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, vitae.
                               </p>
+                        </div>
+                  </div>
+            </section>
+
+            <!--Skills-->
+            <section id="skills-section">
+                  <h2>Skills</h2>
+                  <div class="grid grid-col-2">
+                        <div>
+                              <p>
+                                    Over the years, I have accumulated a variety of technical skills in computing. These go in hand with my interpersonal skills, being able to interact with clients, work in teams, and exercise flexibility, patience and dependability.   
+                              </p>
+                              <!--list of technical skills-->
+                              <span class="skills-heading">Operating Systems:</span> <span>Windows, macOS</span>
+                              <br>
+
+                              <span class="skills-heading">Software:</span> <span>MS Office 365, Adobe Acrobat Pro, Power BI</span>
+                              <br>
+
+                              <span class="skills-heading">Cloud Computing:</span> <span>Microsoft Azure</span>
+                              <br>
+
+                              <span class="skills-heading">Networking:</span> <span>LAN, Wi-Fi, Active Directory</span>
+                              <br>
+                        </div>
+                        <!-- <div class="skills-bar">
+                              <h3>Technical</h3>
+                              <div class="bar">
+                                    <div class="info">
+                                          <span>Operating Systems</span>
+                                    </div>
+                                    <div class="progress-line operating-systems">
+                                          <span></span>
+                                    </div>
+                              </div>
+                              <div class="bar">
+                                    <div class="info">
+                                          <span>Hardware & Software</span>
+                                    </div>
+                                    <div class="progress-line hardware-software">
+                                          <span></span>
+                                    </div>
+                              </div>
+                              <div class="bar">
+                                    <div class="info">
+                                          <span>Networking</span>
+                                    </div>
+                                    <div class="progress-line networking">
+                                          <span></span>
+                                    </div>
+                              </div>
+                        </div> -->
+                        <div class="skills-bar">
+                              <h3>Web Development</h3>
+                              <div class="bar">
+                                    <div class="info">
+                                          <span>HTML</span>
+                                    </div>
+                                    <div class="progress-line html">
+                                          <span></span>
+                                    </div>
+                              </div>
+                              <div class="bar">
+                                    <div class="info">
+                                          <span>CSS</span>
+                                    </div>
+                                    <div class="progress-line css">
+                                          <span></span>
+                                    </div>
+                              </div>
+                              <div class="bar">
+                                    <div class="info">
+                                          <span>Javascript</span>
+                                    </div>
+                                    <div class="progress-line javascript">
+                                          <span></span>
+                                    </div>
+                              </div>
                         </div>
                   </div>
             </section>
@@ -203,28 +282,46 @@
             <section id="contact-section" class="grid grid-col-2">
                   <div>
                         <h2>Connect with me</h2>
+                        <p>Prefer to reach out on WhatsApp? No problem.</p>
+                        <a href="https://wa.me/18683159802" target="_blank"><img src="img/WhatsAppButtonGreenSmall.png"></a>
 
                   </div>
 
-                  <div>
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" placeholder="First Name">
+                  <form id="contact-form">
+                        <div>
+                              <label for="first-name">First Name</label>
+                              <input type="text" id="first-name" placeholder="First Name" required>
+                        </div>
+                        
+                        <div>
+                              <label for="last-name">Last Name</label>
+                              <input type="text" id="last-name" placeholder="Last Name" required>
+                              <br>      
+                        </div>
 
-                        <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" placeholder="Last Name">
-                        <br>
+                        <div>
+                              <label for="e-mail">Email</label>
+                              <input type="email" id="e-mail" placeholder="JohnSmith@gmail.com" required>
+                              <br>      
+                        </div>
+                        
+                        <div>
+                              <label for="phone-num">Phone</label>
+                              <input type="tel" id="phone-num" placeholder="(123)-457-7890">
+                              <br>
+                        </div>
 
-                        <label for="phone-num">Phone</label>
-                        <input type="tel" id="phone-num" placeholder="1-868-123-4567">
-                        <br>
-
-                        <label for="message">Message</label>
-                        <textarea type="tel" cols="50">What would you like to know?</textarea>
-                        <br>
-
-                        <button type="submit">Submit</button>
-                        <button type="reset">Reset</button>
-                  </div>
+                        <div>
+                              <label for="message">Message</label>
+                              <textarea type="textarea" cols="50" rows="10"></textarea>
+                              <br>
+                        </div>
+                        
+                        <div>
+                              <button type="submit">Submit</button>
+                              <button type="reset">Reset</button>
+                        </div>
+                  </form>
             </section>
 
             <!--Footer-->

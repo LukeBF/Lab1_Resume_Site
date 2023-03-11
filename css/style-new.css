@@ -51,12 +51,24 @@ h1,h2
 /**navigation**/
 nav
 {
-      background-color: black;
-      color: #fff;
+      background-color: #EEEEEE;
+      color: #000;
+}
+header > nav > h2
+{
+      align-self: center;
+      margin-bottom: 0;
+      padding-left: 32px;
+}
+header > nav > ul
+{
+      justify-self: end;
+      margin-bottom: 0;
+      padding-left: 32px;
 }
 nav a
 {
-      color: #fff;
+      color: #000;
       font-size: 1.2rem;
       padding: 5px 10px;
 }
@@ -97,49 +109,99 @@ nav ul
       border-radius: 50%;
       align-self: center;
 }
-#hero-section > div:nth-child(2)
+#hero-section > div
 {
       text-align: center;
 }
-#hero-section > div:nth-child(2) > div
+#hero-section > div > div
 {
       margin-top: 32px;
 }
-#hero-section > div:nth-child(2) > div > a,
+#hero-section > div > div a
+{
+      border: 2px solid #3A4750;
+      padding: 15px;
+}
+#hero-section > div > div a:hover
+{
+      border: none;
+      background-color: #1C4B82;
+      color: #fff;
+}
+#about-section > div > div a
+{
+      border: 2px solid #fff;
+      padding: 15px;
+      color: #fff;
+}
+#about-section > div > div a:hover
+{
+      border: none;
+      background-color: #0EF8D3;
+      color: #000;
+}
+/* #hero-section > div:nth-child(2) > div > a,
 #about-section > div > div:nth-child(2) a
 {
       border: 2px solid #000;
       padding: 15px;
-}
+} */
 /*ABOUT*/
-#about-section div img
+#about-section
+{
+      background-color: #183661;
+      color: #fff;
+}
+#about-section > div > div
+{
+      width: 50%;
+      margin: 0 auto;
+      padding: 32px 0;
+}
+#about-section > div > div > h2
+{
+      text-align: center;
+}
+#about-section > div > div > p
+{
+      text-align: justify;
+}
+#about-section > div > div > div
+{
+      /* margin-top: 25px; */
+      justify-items: center;
+}
+.about-links > div:nth-child(1)
+{
+      margin: 25px 0 45px 0;
+}
+#about-section > div > div i
+{
+      padding: 15px 30px;
+      font-size: 2rem;
+}
+/* #about-section div img
 {
       width: 100%;
       height: 100%;
       object-fit: cover;
       padding: 50px;
-}
-#about-section > div > div:nth-child(2)
+} */
+/* #about-section > div > div:nth-child(2)
 {
       padding: 50px;
-}
-#about-section > div > div:nth-child(2) p
-{
-      margin-bottom: 32px;
-}
-#about-section > div > div:nth-child(2) div
-{
-      margin-top: 45px;
-}
-#about-section > div > div:nth-child(2) i
+} */
+/* #about-section > div > div:nth-child(2) i
 {
      padding: 15px 30px 0 0;
      font-size: 2rem;;
-}
+} */
+
 /*SERVICES*/
 #services-section
 {
       background-color: #f8f9fb;
+      height: 50vh;
 }
 #services-section > h2
 {
@@ -157,6 +219,7 @@ nav ul
       border: 2px solid #000;
       margin-bottom: 64px;
       padding: 15px;
+      border-radius: 5px;
 }
 #services-section > div > div > i
 {
@@ -167,7 +230,275 @@ nav ul
 {
       justify-items: center;
 }
+
+/*SKILLS*/
+#skills-section
+{
+      background-color: #183661;
+      height: 50vh;
+}
+#skills-section > div
+{
+      justify-items: center;
+}
+#skills-section > h2
+{
+      text-align: center;
+      padding: 16px 0;
+      color: #fff;
+} 
+#skills-section > div > div:nth-child(1)
+{
+      padding: 25px 64px;
+      color: #fff;
+}
+#skills-section > div > div:nth-child(1) > p
+{
+      margin-bottom: 20px;
+}
+.skills-heading
+{
+      font-weight: bold;
+      line-height: 2rem;
+      font-size: 1.1rem;
+      color: #0EF8D3;
+}
+.skills-bar
+{
+      width: 600px;
+      background: #fff;
+      padding: 15px 30px;
+      border-radius: 10px;
+      /* box-shadow: 5px 5px 10px rgba(0,0,0,0.2); */
+}
+.skills-bar .skills-bar
+{
+      margin: 20px 0;
+}
+.skills-bar .bar:first-child
+{
+      margin-top: 0;
+}
+.skills-bar .bar .info
+{
+      margin-bottom: 5px;
+}
+.skills-bar .bar .info span
+{
+      font-size: 17px;
+      font-weight: 500;
+      /* opacity: 0; */
+      animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText2 
+{
+      100%{
+            opacity: 1;
+      }
+}
+
+.skills-bar .bar .progress-line
+{
+      position: relative;
+      height: 15px;
+      width: 100%;
+      background: #f0f0f0;
+      border-radius: 10px;
+      transform: scaleX(0);
+      transform-origin: left;
+      box-shadow: inset 
+      0 1px 1px rgba(0,0,0,0.05),
+      0 1px rgba(255,255,255,0.8);
+      animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.bar .progress-line span
+{
+      height: 100%;
+      width: 80%;
+      background: #6665ee;
+      position: absolute;
+      border-radius: 10px;
+      transform: scaleX(0);
+      transform-origin: left;
+      animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@keyframes animate
+{
+      100%{
+            transform: scaleX(1);
+      }
+}
+.progress-line.html span
+{
+      width: 90%;
+}
+.progress-line.css span
+{
+      width: 70%;
+}
+.progress-line.javascript span
+{
+      width: 30%;
+}
+/* .progress-line.progress-line.operating-systems span
+{
+      width: 70%;
+} */
+/* .progress-line.progress-line.hardware-software span
+{
+      width: 85%;
+} */
+/* .progress-line.progress-line.cloud-computing span
+{
+      width: 35%;
+} */
+/* .progress-line.progress-line.networking span
+{
+      width: 30%;
+} */
+.bar .progress-line span::before
+{
+      position: absolute;
+      content: "";
+      right: 0;
+      top: -10px;
+      height: 0;
+      width: 0;
+      border: 7px solid transparent;
+      border-bottom-width: 0;
+      border-right-width: 0;
+      border-top-color: #000;
+}
+.bar .progress-line span::after
+{
+      position: absolute;
+      content: "80%";
+      right: 0;
+      top: -28px;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 500;
+      background: #000;
+      padding: 1px 8px;
+      border-radius: 3px;
+      opacity: 0;
+      animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 
+{
+      100%{
+            opacity: 1;
+      }
+}
+.progress-line.html span::after
+{
+      content: "90%";
+}
+.progress-line.css span::after
+{
+      content: "70%";
+}
+.progress-line.javascript span::after
+{
+      content: "30%";
+}
+/* .progress-line.operating-systems span::after
+{
+      content: "70%";
+} */
+/* .progress-line.hardware-software span::after
+{
+      content: "85%";
+} */
+/* .progress-line.cloud-computing span::after
+{
+      content: "35%";
+} */
+/* .progress-line.networking span::after
+{
+      content: "30%";
+} */
+
+/* #skills-section
+{
+      background-color: #f8f9fb;
+} */
+/* #skills-section > h2
+{
+      text-align: center;
+      padding: 16px 0;
+}
+#skills-section h3
+{
+      font-size: 1.5rem;
+}
+#skills-section > div > div
+{
+      text-align: center;
+      width: 60%;
+      border: 2px solid #000;
+      margin-bottom: 64px;
+      padding: 15px;
+      border-radius: 5px;
+}
+#skills-section > div > div > i
+{
+      font-size: 3rem;
+      padding: 15px
+}
+#skills-section > div
+{
+      justify-items: center;
+} */
 /*CONTACT*/
+#contact-section
+{
+      justify-items: center;
+      align-items: center;
+      padding: 32px 0;
+}
+#contact-section > div
+{
+      justify-items: center;
+      padding: 16px;
+}
+#contact-section > div img
+{
+      margin-top: 16px;
+}
+#contact-form
+{
+      max-width: 500px;
+}
+#contact-form > div > label
+{
+      display: block;
+}
+#contact-form input,
+#contact-form textarea 
+{
+      width: 100%;
+}
+label
+{
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+}
+input
+{
+      margin-bottom: 10px;
+}
+input,textarea
+{
+      padding: 10px 5px;
+}
+button
+{
+      margin: 16px 32px 16px 0;
+      width: 100px;
+      padding: 16px 8px;
+}
+
 /*CERTIFICATES*/
 #certificates-section div > img
 {
