@@ -14,29 +14,38 @@
       <body>
             <!--<header> is a container-->
             <header>
-                  <nav class="grid grid-col-2">
-                        <h2>Lukos</h2>
+                  <!-- <nav class="grid grid-col-2">
+                        <img src="img/logo-sig-black.png">
                         <ul>
                               <li><a href="#">Home</a></li>
                               <li><a href="html/about.html">About</a></li>
                               <li><a href="html/about.html">Services</a></li>
                               <li><a href="html/contact.html">Contact</a></li>
                         </ul>
-                  </nav>
+                  </nav> -->
             </header>
-            <section id="hero-section" class="grid grid-row-2">
-                  <div class="grid">
-                        <img src="./img/profile.png">
-                  </div>
-                  <div>
-                        <h1>Luke Blache-Fraser</h1>
-                        <h2>IT Services | Web Developer</h2>
-                        <p>
-                              Providing technical support and website development for your business or personal brand.
-                        </p>
-                        <div>
-                              <a href="#">Contact Me</a>
-                              <a href="#">Download CV</a>
+            <section id="hero-section">
+                  <nav class="grid">
+                        <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="html/about.html">About</a></li>
+                              <li><a href="html/about.html">Services</a></li>
+                              <li><a href="html/contact.html">Contact</a></li>
+                              <li id="hire-me"><a href="#">Hire Me</a></li>
+                        </ul>
+                  </nav>
+                  <div class="grid grid-col-2">
+                        <div class="grid">
+                              <h1>Luke Blache-Fraser</h1>
+                              <p>
+                                    Hi there, you can call me Lukos.<br>I'm an IT Service Desk Analyst and freelance Website Developer. 
+                              </p>
+                              <div>
+                                    <a href="#">Download CV</a>
+                              </div>
+                        </div>
+                        <div class="grid">
+                              <img src="img/portraits/profile-pic-portrait-colour.jpg" alt="picture of Luke">
                         </div>
                   </div>
             </section>
@@ -59,7 +68,7 @@
                                           <a href="#">Message Me</a><br>
                                     </div>
                                     
-                                    <div>
+                                    <div class="social-media-icons">
                                           <i class="fa-brands fa-square-facebook"></i>
                                           <i class="fa-brands fa-instagram"></i>
                                           <i class="fa-brands fa-linkedin"></i>
@@ -78,21 +87,21 @@
                               <i class="fa-solid fa-computer"></i>
                               <h3>Technical Support</h3>
                               <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, vitae.
+                                    Interacting with clients to understand computer and network issues being faced and implementing proper troubleshooting techniques to find workable solutions.
+                              </p>
+                        </div>
+                        <div>
+                              <i class="fa-solid fa-magnifying-glass-chart"></i>
+                              <h3>Data Analytics</h3>
+                              <p>
+                                    Taking Helpdesk data and analysing it to identify common trends to aid with making informed decisions. Documenting fidings and presenting reports to management.
                               </p>
                         </div>
                         <div>
                               <i class="fa-solid fa-code"></i>
-                              <h3>Web Development</h3>
+                              <h3>Website Development</h3>
                               <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, vitae.
-                              </p>
-                        </div>
-                        <div>
-                              <i class="fa-solid fa-headphones-simple"></i>
-                              <h3>Customer Service</h3>
-                              <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, vitae.
+                                    Front-end web developer using customized code and popular CMS platforms to create modern, functional websites and web applications.
                               </p>
                         </div>
                   </div>
@@ -100,8 +109,9 @@
 
             <!--Skills-->
             <section id="skills-section">
-                  <h2>Skills</h2>
+                  <h2>Skills & Experience</h2>
                   <div class="grid grid-col-2">
+                        <!--grid left-->
                         <div>
                               <p>
                                     Over the years, I have accumulated a variety of technical skills in computing. These go in hand with my interpersonal skills, being able to interact with clients, work in teams, and exercise flexibility, patience and dependability.   
@@ -116,124 +126,43 @@
                               <span class="skills-heading">Cloud Computing:</span> <span>Microsoft Azure</span>
                               <br>
 
-                              <span class="skills-heading">Networking:</span> <span>LAN, Wi-Fi, Active Directory</span>
+                              <span class="skills-heading">Networking:</span> <span>LAN, Wi-Fi</span>
                               <br>
                         </div>
-                        <!-- <div class="skills-bar">
-                              <h3>Technical</h3>
-                              <div class="bar">
-                                    <div class="info">
-                                          <span>Operating Systems</span>
+            
+                        <!--grid right-->
+                        <div class="grid">
+                              <div class="skills-bar">
+                                    <h3>Web Development</h3>
+                                    <div class="bar">
+                                          <div class="info">
+                                                <span>HTML</span>
+                                          </div>
+                                          <div class="progress-line html">
+                                                <span></span>
+                                          </div>
                                     </div>
-                                    <div class="progress-line operating-systems">
-                                          <span></span>
+                                    <div class="bar">
+                                          <div class="info">
+                                                <span>CSS</span>
+                                          </div>
+                                          <div class="progress-line css">
+                                                <span></span>
+                                          </div>
                                     </div>
-                              </div>
-                              <div class="bar">
-                                    <div class="info">
-                                          <span>Hardware & Software</span>
-                                    </div>
-                                    <div class="progress-line hardware-software">
-                                          <span></span>
-                                    </div>
-                              </div>
-                              <div class="bar">
-                                    <div class="info">
-                                          <span>Networking</span>
-                                    </div>
-                                    <div class="progress-line networking">
-                                          <span></span>
-                                    </div>
-                              </div>
-                        </div> -->
-                        <div class="skills-bar">
-                              <h3>Web Development</h3>
-                              <div class="bar">
-                                    <div class="info">
-                                          <span>HTML</span>
-                                    </div>
-                                    <div class="progress-line html">
-                                          <span></span>
-                                    </div>
-                              </div>
-                              <div class="bar">
-                                    <div class="info">
-                                          <span>CSS</span>
-                                    </div>
-                                    <div class="progress-line css">
-                                          <span></span>
-                                    </div>
-                              </div>
-                              <div class="bar">
-                                    <div class="info">
-                                          <span>Javascript</span>
-                                    </div>
-                                    <div class="progress-line javascript">
-                                          <span></span>
+                                    <div class="bar">
+                                          <div class="info">
+                                                <span>Javascript</span>
+                                          </div>
+                                          <div class="progress-line javascript">
+                                                <span></span>
+                                          </div>
                                     </div>
                               </div>
                         </div>
                   </div>
             </section>
 
-            <!--Work Experience-->
-            <section>
-                  <!-- <h2>Work Experience</h2> -->
-                  <!--div elements are typically used within a section-->
-                  <div>
-                        <!-- <h3>Actavo Trinidad & Tobago Ltd.</h3> -->
-                        <!--inserting hyperlink-->
-                        <!-- <a href="https://actavo.com/" target="_blank">Actavo</a>
-                        <h4>IT Service Desk Analyst</h4>
-                        <p>
-                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni vero quaerat corrupti rem maxime nisi molestiae aperiam beatae obcaecati voluptatum?
-                        </p>
-                        <ul>
-                              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vitae!</li>
-                              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vitae!</li>
-                              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vitae!</li>
-                              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vitae!</li>
-                              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vitae!</li>
-                        </ul>       -->
-                  </div>
-
-                  <!-- <div>
-                        <h3>Sagicor Life Inc.</h3>
-                        <a href="https://www.sagicor.com/en-tt" target="_blank">Sagicor Lif Inc.</a>
-                        <h4>Technical Support Officer</h4>
-                        <p>
-                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni vero quaerat corrupti rem maxime nisi molestiae aperiam beatae obcaecati voluptatum?
-                        </p>
-                        <ul>
-                              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vitae!</li>
-                              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vitae!</li>
-                              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vitae!</li>
-                              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vitae!</li>
-                              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vitae!</li>
-                        </ul>
-                  </div> -->
-            </section>
-            
-
-            <!--Education-->
-            <!-- <section>
-                  <h2>Academic Background</h2>
-                  <div>
-                        <h3>Ryerson University</h3>
-                        <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptatem?
-                        </p>
-                  </div>
-
-                  <div>
-                        <h3>Sheridan College</h3>
-                        <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptatem?
-                        </p>
-                  </div>
-            </section> -->
-            
-            
             <!--Certifications-->
             <!-- <section id="certificates-section">
                   <h2>Certifications</h2>
@@ -278,10 +207,47 @@
                   </div>        
             </section> -->
 
+            <!--Toolkit-->
+            <section id="toolkit-section">
+                  <div class="grid grid-col-8">
+                        <div class="grid">
+                              <img src="img/logos/icons8-windows-10-240.png">
+                        </div>
+
+                        <div class="grid">
+                              <img src="img/logos/icons8-apple-logo-240.png">
+                        </div>
+
+                        <div class="grid">
+                              <img src="img/logos/icons8-azure-240.png">
+                        </div>
+
+                        <div class="grid">
+                              <img src="img/logos/icons8-office-365-240.png">
+                        </div>
+
+                        <div class="grid">
+                              <img src="img/logos/icons8-power-bi-240.png">
+                        </div>
+
+                        <div class="grid">
+                              <img src="img/logos/icons8-html-5-240.png">
+                        </div>
+
+                        <div class="grid">
+                              <img src="img/logos/icons8-css3-240.png">
+                        </div>
+
+                        <div class="grid">
+                              <img src="img/logos/icons8-javascript-240.png">
+                        </div>
+                  </div>
+            </section>
+
             <!--Contact-->
             <section id="contact-section" class="grid grid-col-2">
                   <div>
-                        <h2>Connect with me</h2>
+                        <h3>Connect with me</h3>
                         <p>Prefer to reach out on WhatsApp? No problem.</p>
                         <a href="https://wa.me/18683159802" target="_blank"><img src="img/WhatsAppButtonGreenSmall.png"></a>
 
